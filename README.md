@@ -1,4 +1,4 @@
-# zero-trust-auth-gateway
+﻿# zero-trust-auth-gateway
 
 Шлюз авторизации на Go. Реализует модель Zero-Trust: каждый входящий запрос проверяется независимо, короткоживущие JWT-токены привязаны к сессиям, а при выходе или компрометации токены сразу аннулируются.
 
@@ -12,13 +12,13 @@
 
 ## Основные эндпоинты
 
-- `POST /api/v1/auth/register` — регистрация пользователя
-- `POST /api/v1/auth/login` — вход по паролю и 2FA-коду
-- `POST /api/v1/auth/refresh` — ротация пары токенов
-- `POST /api/v1/auth/2fa/setup` — получение секрета и ссылки для приложения 2FA
-- `POST /api/v1/auth/2fa/verify` — подтверждение кода и активация 2FA
-- `GET /api/v1/secure/resource` — пример защищенного эндпоинта
-- `GET /api/v1/admin/audit-logs` — журнал событий безопасности (только для роли admin)
+- `POST /api/v1/auth/register` - регистрация пользователя
+- `POST /api/v1/auth/login` - вход по паролю и 2FA-коду
+- `POST /api/v1/auth/refresh` - ротация пары токенов
+- `POST /api/v1/auth/2fa/setup` - получение секрета и ссылки для приложения 2FA
+- `POST /api/v1/auth/2fa/verify` - подтверждение кода и активация 2FA
+- `GET /api/v1/secure/resource` - пример защищенного эндпоинта
+- `GET /api/v1/admin/audit-logs` - журнал событий безопасности (только для роли admin)
 
 ## Запуск
 
